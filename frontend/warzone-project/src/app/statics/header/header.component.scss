@@ -1,0 +1,19 @@
+.header {
+  background-color: black;
+}
+
+img {
+  width: 160px;
+  height: 60px;
+}
+
+button {
+  color: rgba(255, 255, 255, 0.712);
+  font-size: 23px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-evenly;
+}
