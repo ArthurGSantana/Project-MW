@@ -1,0 +1,5 @@
+@use '../../templates/guns/guns.component.scss';
+
+body {
+  @extend %background-gun !optional;
+}

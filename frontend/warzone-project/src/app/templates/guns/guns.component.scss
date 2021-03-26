@@ -1,8 +1,12 @@
-body {
+%background-gun {
   height: 88%;
   background-image: url('../../../assets/guns-page-MW.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+body {
+  @extend %background-gun;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -17,20 +21,75 @@ div {
 
 .card {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: rgba(155, 153, 153, 0.712);
   width: 350px;
   height: 50px;
   flex-direction: column;
   justify-content: space-evenly;
   cursor: pointer;
+  flex-wrap: wrap;
+  outline: none;
+  //border-radius: 50%;
 }
 
 .card:hover {
-  box-shadow: 3px 7px;
+  box-shadow: 3px 7px rgb(20, 20, 20);
 }
 
 button {
   background-color: rgba(255, 255, 255, 0.712);
 }
+
+%img-gun {
+  width: 35%;
+  height: 150px;
+}
+
+.img-ar {
+  @extend %img-gun;
+}
+
+.img-smg {
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+}
+
+.img-sg {
+  @extend %img-gun;
+  margin-left: 20px;
+}
+
+.img-lmg {
+  @extend %img-gun;
+  width: 150px;
+}
+
+.img-mr {
+  @extend %img-gun;
+  margin: 0px 20px 0px -10px;
+}
+
+.img-snp {
+  @extend %img-gun;
+  width: 150px;
+}
+
+.img-hand {
+  @extend %img-gun;
+}
+
+.img-rpg {
+  @extend %img-gun;
+  width: 170px;
+}
+
+span {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  color: black;
+}
+
 
 

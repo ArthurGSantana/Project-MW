@@ -1,0 +1,58 @@
+@use '../../templates/guns/guns.component.scss';
+
+body {
+  @extend %background-gun !optional;
+  display: flex;
+}
+
+div {
+  display: flex;
+  width: 100px;
+  flex-wrap: nowrap;
+}
+
+.M4A1{
+  height: 200px;
+  width: 200px;
+  background-color: rgba(173, 170, 170, 0.877);
+  transition:all 0.3s ease;
+}
+
+.M4A1:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.M4A1-img {
+  width: 150px;
+  margin-left: 20px;
+}
+
+h1 {
+  margin-left: 70px;
+  margin-top: -20px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+span {
+  font-size: 15px;
+  margin-top: 7px;
+}
+
+footer {
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
