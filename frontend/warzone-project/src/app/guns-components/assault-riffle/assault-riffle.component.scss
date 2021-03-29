@@ -1,37 +1,47 @@
-@use '../../templates/guns/guns.component.scss';
+@use '../../templates/newStyle.scss' as guns;
 
 body {
   @extend %background-gun !optional;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 div {
   display: flex;
-  width: 100px;
-  flex-wrap: nowrap;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+
 }
 
-.M4A1{
+.M4A1, .RAM7, .M13, .KILO, .GRAU, .AK47, .ODEN, .SCAR {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: -12px;
   height: 200px;
   width: 200px;
   background-color: rgba(173, 170, 170, 0.877);
   transition:all 0.3s ease;
+  flex-wrap: nowrap;
 }
 
-.M4A1:hover {
+.M4A1:hover, .RAM7:hover, .M13:hover, .KILO:hover, .GRAU:hover, .AK47:hover, .ODEN:hover, .SCAR:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-.M4A1-img {
+.M4A1-img, .RAM7-img, .M13-img, .KILO-img, .GRAU-img, .AK47-img, .ODEN-img, .SCAR-img {
+  align-self: flex-start;
   width: 150px;
-  margin-left: 20px;
+  margin-left: 24px;
 }
 
 h1 {
-  margin-left: 70px;
-  margin-top: -20px;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;

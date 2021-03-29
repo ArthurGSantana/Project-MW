@@ -1,9 +1,4 @@
-%background-gun {
-  height: 88%;
-  background-image: url('../../../assets/guns-page-MW.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
+@use '../../templates/newStyle.scss' as newStyle;
 
 body {
   @extend %background-gun;
