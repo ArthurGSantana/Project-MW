@@ -1,4 +1,37 @@
-img {
-  width: 100%;
+body {
+  background-image: url('../../../assets/Atiradores-MW.jpg');
   height: 88%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.sidenav {
+  background-color: black;
+  border: none;
+}
+
+.item {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: -30px;
+}
+
+span, i {
+  color: rgba(255, 255, 255, 0.712);
+}
+
+span {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+}
+
+.option {
+  margin-left: 15px;
+  width: 50px;
+  font-size: 35px;
+
+}
+
+.prim {
+  margin-top: 10px;
 }
