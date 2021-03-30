@@ -1,5 +1,68 @@
-@use '../../templates/guns/guns.component.scss';
+@use '../../templates/newStyle.scss' as guns;
 
 body {
   @extend %background-gun !optional;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+
+div {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.MD50, .MD357, .X16, .M19, .MD1911, .RENETTI {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: -12px;
+  height: 200px;
+  width: 200px;
+  background-color: rgba(173, 170, 170, 0.877);
+  transition:all 0.3s ease;
+  flex-wrap: nowrap;
+}
+
+.MD50:hover, .MD357:hover, .X16:hover, .M19:hover, .MD1911:hover, .RENETTI:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.MD50-img, .MD357-img, .X16-img, .M19-img, .MD1911-img, .RENETTI-img {
+  align-self: flex-start;
+  width: 150px;
+  margin-left: 24px;
+}
+
+h1 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+span {
+  font-size: 15px;
+  margin-top: 7px;
+}
+
+footer {
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+
+
+

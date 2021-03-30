@@ -1,5 +1,68 @@
-@use '../../templates/guns/guns.component.scss';
+@use '../../templates/newStyle.scss' as guns;
 
 body {
   @extend %background-gun !optional;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+
+div {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.BRUEN, .HOLGER, .PKM, .SA87, .MG34, .M91, .FINN, .STONER {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: -12px;
+  height: 200px;
+  width: 200px;
+  background-color: rgba(173, 170, 170, 0.877);
+  transition:all 0.3s ease;
+  flex-wrap: nowrap;
+}
+
+.BRUEN:hover, .HOLGER:hover, .PKM:hover, .SA87:hover, .MG34:hover, .M91:hover, .FINN:hover, .STONER:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.BRUEN-img, .HOLGER-img, .PKM-img, .SA87-img, .MG34-img, .M91-img, .FINN-img, .STONER-img {
+  align-self: flex-start;
+  width: 150px;
+  margin-left: 24px;
+}
+
+h1 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+span {
+  font-size: 15px;
+  margin-top: 7px;
+}
+
+footer {
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
