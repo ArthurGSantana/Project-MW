@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 import { HomeComponent } from './templates/home/home.component';
@@ -26,6 +27,7 @@ import { MarksmanComponent } from './guns-components/marksman/marksman.component
 import { SniperComponent } from './guns-components/sniper/sniper.component';
 import { HandgunComponent } from './guns-components/handgun/handgun.component';
 import { RpgsComponent } from './guns-components/rpgs/rpgs.component';
+import { MapsComponent } from './templates/maps/maps.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { RpgsComponent } from './guns-components/rpgs/rpgs.component';
     MarksmanComponent,
     SniperComponent,
     HandgunComponent,
-    RpgsComponent
+    RpgsComponent,
+    MapsComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { RpgsComponent } from './guns-components/rpgs/rpgs.component';
     MatCardModule,
     MatProgressBarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

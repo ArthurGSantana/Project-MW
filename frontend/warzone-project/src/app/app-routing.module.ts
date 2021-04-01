@@ -1,3 +1,4 @@
+import { MapsComponent } from './templates/maps/maps.component';
 import { RpgsComponent } from './guns-components/rpgs/rpgs.component';
 import { HandgunComponent } from './guns-components/handgun/handgun.component';
 import { SniperComponent } from './guns-components/sniper/sniper.component';
@@ -13,6 +14,7 @@ import { AssaultRiffleComponent } from './guns-components/assault-riffle/assault
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'maps', component: MapsComponent},
   {path: 'guns', component: GunsComponent},
   {path: 'guns/assault-riffles', component: AssaultRiffleComponent},
   {path: 'guns/smgs', component: SmgsComponent},

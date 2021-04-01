@@ -1,7 +1,6 @@
 <!-- <img src="../../../assets/Atiradores-MW.jpg" alt="capa-warzone"> -->
 
 <body>
-
   <mat-sidenav-container>
       <mat-sidenav mode=side align="start" opened fixedInViewport="true" class="sidenav">
         <mat-nav-list class="nav-list">
@@ -16,7 +15,7 @@
               </i>
               <span>Init</span>
           </a>
-          <a class="item" mat-list-item routerLink=''>
+          <a class="item" mat-list-item routerLink='/maps'>
             <i class="material-icons">
                 map
             </i>
@@ -24,21 +23,43 @@
           </a>
           <a class="item" mat-list-item routerLink=''>
             <i class="material-icons">
-                book
+                menu_book
             </i>
             <span>History</span>
           </a>
           <a class="item" mat-list-item routerLink=''>
-            <i class="fas fa-biohazard"></i>
-            <span>History</span>
+            <i class="material-icons">
+              public
+            </i>
+            <span>Groups</span>
+          </a>
+          <a class="item" mat-list-item routerLink=''>
+            <i class="material-icons">
+              supervised_user_circle
+            </i>
+            <span>Chars</span>
+          </a>
+          <a class="item" mat-list-item routerLink=''>
+            <i class="material-icons">
+              star
+            </i>
+            <span>Rank</span>
+          </a>
+
+          <a class="face" mat-list-item href='https://www.facebook.com/profile.php?id=100014640667728' target="_blank">
+            <i class="material-icons">
+              facebook
+            </i>
+          </a>
+
+          <a class="fav" mat-list-item routerLink=''>
+            <i class="material-icons">
+              favorite
+            </i>
           </a>
 
         </mat-nav-list>
       </mat-sidenav>
       <!-- Body -->
-
   </mat-sidenav-container>
-
-
-
 </body>

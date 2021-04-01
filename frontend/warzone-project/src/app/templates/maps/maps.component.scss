@@ -1,0 +1,13 @@
+@use '../../templates/newStyle.scss' as newStyle;
+
+body {
+  @extend %background-maps;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card {
+  height: 450px;
+  width: 800px;
+}

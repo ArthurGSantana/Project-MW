@@ -1,8 +1,7 @@
+@use '../../templates/newStyle.scss' as newStyle;
+
 body {
-  background-image: url('../../../assets/Atiradores-MW.jpg');
-  height: 88%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  @extend %background-home;
 }
 
 .sidenav {
@@ -12,7 +11,7 @@ body {
 
 .item {
   display: flex;
-  margin-top: 50px;
+  margin-top: 35px;
   margin-bottom: -30px;
 }
 
@@ -23,15 +22,32 @@ span, i {
 span {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 20px;
+  margin-left: 8px;
 }
 
 .option {
   margin-left: 15px;
   width: 50px;
-  font-size: 35px;
+  font-size: 40px;
 
 }
 
 .prim {
-  margin-top: 10px;
+  margin-top: 40px;
+}
+
+.face {
+  margin-top: 155px;
+  i {
+    margin-left: 18px;
+    font-size: 50px;
+  }
+}
+
+.fav {
+  margin-top: 20px;
+  i {
+    margin-left: 18px;
+    font-size: 50px;
+  }
 }
